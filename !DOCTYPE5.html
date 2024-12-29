@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and Travels Himachal Pradesh Cab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(45deg, #8e44ad, #3498db);
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav {
+            background: linear-gradient(90deg, #9b59b6, #34495e);
+            color: white;
+            padding: 0.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .hero {
+            background: url('/mnt/data/A_scenic_website_banner_featuring_the_beautiful_la.png') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .service {
+            background: linear-gradient(45deg, #6a3093, #a044ff);
+            color: white;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #8e44ad;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        .button:hover {
+            background-color: #6c3483;
+        }
+        footer {
+            background: linear-gradient(45deg, #2c3e50, #4ca1af);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .star {
+            font-size: 2rem;
+            color: gold;
+            margin: 0 0.1rem;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #8e44ad;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        // Function to handle the voice greeting
+        window.onload = function() {
+            var audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'); // Add your own audio file URL here
+            audio.play();
+            alert("Namaste! Kaise ho ji? Aaj kaha jane ka plan hai? Book kare hame.");
+        };
+
+        function bookNow() {
+            alert("Thank you for choosing our service! A representative will contact you soon.");
+        }
+
+        // Function for Text-to-Speech
+        function speakText(text) {
+            var utterance = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(utterance);
+        }
+
+        // Function to greet the user with voice
+        function greetUser() {
+            speakText("Namaste! Kaise ho ji? Aaj kaha jane ka plan hai? Book kare hame.");
+        }
+    </script>
+</head>
+<body onload="greetUser()">
+    <header>
+        <h1>Tour and Travels Himachal Pradesh Cab</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="Google.com">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#discount">Make a Plan</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <h1>Explore Himachal Pradesh with Ease</h1>
+        <p>Reliable and affordable cab services for your journey</p>
+        <button class="button" onclick="bookNow()">Book Now</button>
+    </section>
+    <section id="services">
+        <h2 style="text-align: center;">Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <img src="/mnt/data/A_stunning_view_of_a_modern_airport_terminal_with_.png" alt="Airport Terminal" style="width:100%;border-radius:8px;">
+                <h3>Airport Pickup</h3>
+                <p>Hassle-free airport pickup and drop services at your convenience.</p>
+                <button class="button" onclick="bookNow()">Learn More</button>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/150" alt="Local Sightseeing" style="width:100%;border-radius:8px;">
+                <h3>Local Sightseeing</h3>
+                <p>Explore the scenic beauty of Himachal Pradesh with our expert drivers.</p>
+                <button class="button" onclick="bookNow()">Learn More</button>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/150" alt="Long-Distance Travel" style="width:100%;border-radius:8px;">
+                <h3>Long-Distance Travel</h3>
+                <p>Comfortable rides to your desired destinations within and outside Himachal.</p>
+                <button class="button" onclick="bookNow()">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2 style="text-align: center;">About Us</h2>
+        <p>We provide the best cab services in Himachal Pradesh, ensuring you have a comfortable and memorable journey.</p>
+        <div class="rating">
+            <span class="star">⭐</span>
+            <span class="star">⭐</span>
+            <span class="star">⭐</span>
+            <span class="star">⭐</span>
+            <span class="star">⭐</span>
+        </div>
+    </section>
+    <section id="discount">
+        <h2 style="text-align: center;">Make Your Own Trip Plan</h2>
+        <p>Plan your trip with us and enjoy discounts on your bookings!</p>
+        <button class="button" onclick="bookNow()">Start Planning</button>
+    </section>
+    <section id="contact">
+        <h2 style="text-align: center;">Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Tour and Travels Himachal Pradesh Cab. All rights reserved.</p>
+        <p>Contact us at: <a href="mailto:tourandtravelshimachalpradesh@gmail.com" style="color:white;">tourandtravelshimachalpradesh@gmail.com</a> or call <a href="tel:+917018305880" style="color:white;">7018305880</a></p>
+    </footer>
+</body>
+</html>
